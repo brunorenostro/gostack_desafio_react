@@ -39,12 +39,14 @@ setRepositories([...repositories,repositorie]);
   }
 
   return (
-    <div>
+    <div id="container">
       <ul data-testid="repository-list">
         
           
-{repositories.map(repositorie => <li key={repositorie.id}>{repositorie.title}
+{repositories.map(repositorie => <li class="card" key={repositorie.id}>{repositorie.title}
+
   <button onClick={() => handleRemoveRepository(repositorie.id)}>
+    
             Remover
           </button>
         </li>)}

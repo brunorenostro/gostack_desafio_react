@@ -16,6 +16,10 @@ div {
 div li {
   display: flex;
   align-items: center;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 10px;
 }
 
 div li + li {
@@ -36,4 +40,27 @@ button {
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+div #container{
+  background-color: #536DFE;
+  padding: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  max-width: 1200px;
+  align-content: center;
+}
+
+.card{
+  background-color: #00BCD4;
+  padding: 10px;
+
+}
+
+#stacks{
+  background-color: green;
+  max-width: 200px;
+  margin: 5px;
+  padding: 5px;
+
 }
