@@ -34,11 +34,7 @@ setRepositories([...repositories,repositorie]);
     
      await api.delete(`/repositories/${id}`);
     
-    api.get('/repositories').then(response =>{
-
-      setRepositories(response.data);
-      });
-  
+   setRepositories(repositories.filter(repositorie => repositorie.id!==id));
 
   }
 
